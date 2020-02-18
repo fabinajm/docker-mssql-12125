@@ -1,0 +1,16 @@
+version: '2.1'
+services:
+
+  dbaccess:
+    build: .
+    ports:
+      - 7891:7891
+      - 1433:1433
+      - 8082:8082
+      - 1234:1234
+      - 2234:2234
+      - 8020:8020
+      - 5555:5555
+    environment:
+      ACCEPT_EULA: Y
+      SA_PASSWORD: P@55w0rd
